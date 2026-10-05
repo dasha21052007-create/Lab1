@@ -21,7 +21,6 @@ def sqrt_newton_residual(a, eps=EPS, n_max=N_MAX, verbose=False):
             return x_new, n
         x = x_new
 
-    # ВАЖНО: raise стоит ВНЕ цикла (отступ как у for)
     raise RuntimeError(
         f"sqrt({a}): точность {eps} не достигнута за {n_max} итераций"
     )
